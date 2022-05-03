@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  justify-content: center;
+  padding: 10em;
+  background-color: rgb(246, 240, 240);
+  color: black;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.container {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+  padding: .5em;
+  font-size: 2rem;
+  background-color: hsl(0, 0%, 92%);
+  border: 1px solid hsl(0, 0%, 80%);
+  box-shadow: 0 0 5px 0 hsl(0, 0%, 40%);
+}
+.section-top {
+  border-bottom: 1px solid #ccc;
+}
+
+.section-bottom {
+  border: none;
+}
+
+h2,
+h4 {
+  text-align: center;
+}
+
+h2 {
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+
+h4 {
+  color: hsl(0, 0%, 40%);
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+input {
+  border: none;
+  margin-top: .5rem;
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+input:hover {
+    border: 1px solid hsl(0, 0%, 60%);
+
+}
+
+#task-input {
+  background-color: hsl(0, 0%, 95%);
+  border-bottom: 1px solid hsl(0, 0%, 60%);
+  cursor: pointer;
+  padding: 0.5em 1em;
+}
+
+.btn {
+  background-color: hsl(200 100% 50%);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  border: 0;
+  font-size: 1rem;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: hsl(200 100% 40%);
+}
+
+.btn.btn-add {
+  background-color: hsl(200, 100%, 40%);
+  border-color: hsl(200, 100%, 20%);
+  margin: 1rem;
+  margin-top: .5rem;
+}
+
+.btn.btn-add:hover,
+.btn.btn-add:focus {
+  background-color: hsl(200, 100%, 30%);
+  box-shadow: 0 0 5px 0 hsl(200, 100%, 20%);
+}
+
+.task-container {
+  display: grid;
+  justify-content: center;
+}
+
+.taskList {
+  list-style-type: none;
+  margin-top: .25rem;
+  padding: 0;
+}
+
+.task {
+  justify-content: space-between;
+  padding: .25em;
+  font-size: 1.5rem;
+  
+}
+
+.btn.btn-clear {
+  background-color: hsl(200, 100%, 0%);
+  border-color: 1px solid hsl(0, 0%, 50%);
+  margin: .5rem 1rem;
+}
+
+.btn.btn-clear:hover,
+.btn.btn-clear:focus {
+  background-color: hsl(0, 0%, 60%);
+  box-shadow: 0 0 5px 0 hsl(0, 0%, 50%);
+}
